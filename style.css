@@ -6,6 +6,10 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,46 +19,93 @@ header {
   justify-content: center;
 }
 
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 98%;
+  height: 400px;
 }
 
-.container {
+section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: white;
-  width: 300px;
-  height: auto;
+  width: 400px;
+  height: 150px;
   padding: 20px 0px;
   border-radius: 10px;
 }
 
-.coolinput {
-    max-width: 240px;
-  }
+.container {
+  display: flex;
+  height: 150px;
+  width: 350px;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-  .coolinput .label {
-    font-size: 0.75rem;
-    color: #0066FF;
-    font-weight: 700;
-    margin: 0 0 0 7px;
-  }
+.box-input {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .coolinput .input {
-    padding: 11px 10px;
-    font-size: 0.75rem;
-    border: 2px #0066FF solid;
-    border-radius: 5px;
-  }
+.box-input .label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #0066ff;
+  font-weight: 700;
+  margin: 0px;
+}
 
-#button {
-  padding: 0px 20px;
-  gap: 15px;
-  background-color: #0066FF;
-  outline: 3px #0066FF solid;
+.box-input .input {
+  width: 20px;
+  padding: 4px;
+  margin: 10px 5px;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 2px #0066ff solid;
+  border-radius: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.box-botao {
+  display: flex;
+  width: 310px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#button1,
+#button2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 125px;
+  background-color: #0066ff;
+  outline: 3px #0066ff solid;
   outline-offset: -3px;
   border-radius: 5px;
   border: none;
@@ -62,22 +113,40 @@ main {
   transition: 400ms;
 }
 
-#button .text {
+#button1,
+#button2 .text {
   color: white;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.85rem;
   transition: 400ms;
 }
 
-#button:hover {
+#button1:hover,
+#button2:hover {
   background-color: transparent;
 }
 
-#button:hover .text {
-    color: #0066FF;
-  }
+#button1:hover .text,
+#button2:hover .text {
+  color: #0066ff;
+}
 
-  #resposta {
-    max-width: 240px;
-    color: black;
-  }
+#resposta {
+  color: black;
+  width: 310px;
+}
+
+#resposta p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.span-green {
+  color: rgb(0, 172, 0);
+  font-weight: bold;
+}
+
+.span-red {
+  color: red;
+  font-weight: bold;
+}

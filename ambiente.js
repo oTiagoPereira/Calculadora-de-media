@@ -9,10 +9,12 @@ function calcular() {
   if (soma < 14) {
     media = soma / 2;
     final = 10 - media;
-    resposta.innerHTML = `A sua média foi ${media}. Você precisa de ${final} para ser aprovado na avaliação final.`;
+    resposta.innerHTML = `<p>A sua média foi <span class="span-red">${media}</span>.</p> 
+    <p>Você precisa de ${final} para ser aprovado na avaliação final.</p>`;
   } else if (soma >= 14) {
     media = soma / 2;
-    resposta.innerHTML = `A sua média foi ${media}. Você está APROVADO.`;
+    resposta.innerHTML = `<p>A sua média foi <span class="span-green">${media}</span>.</p>
+    <p>Você está <span class="span-green">APROVADO</span>.</p>`;
   }
 }
 
