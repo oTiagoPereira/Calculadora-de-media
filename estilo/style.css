@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-image: url(/imagens/wave-haikei.svg);
+  background-image: url(../imagens/wave-haikei.svg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
