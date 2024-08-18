@@ -28,7 +28,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 98%;
+  width: 98vw;
   height: 400px;
 }
 
@@ -36,7 +36,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 400px;
   height: 150px;
   padding: 20px 0px;
@@ -150,4 +150,18 @@ input[type="number"] {
 .span-red {
   color: red;
   font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    max-width: 90vw;
+  }
+
+  .container {
+    max-width: 90vw;
+  }
+
+  #resposta {
+    max-width: 90vw;
+  }
 }
