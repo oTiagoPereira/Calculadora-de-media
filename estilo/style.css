@@ -159,6 +159,7 @@ input[type="number"] {
 
   .container {
     max-width: 90vw;
+    height: 200px;
   }
 
   #resposta {
