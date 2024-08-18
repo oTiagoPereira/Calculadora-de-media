@@ -1,5 +1,6 @@
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
+let container = document.getElementById("container");
 function calcular() {
   N1 = document.getElementById("num1");
   N2 = document.getElementById("num2");
@@ -9,8 +10,9 @@ function calcular() {
   if (soma < 14) {
     media = soma / 2;
     final = 10 - media;
-    resposta.innerHTML = `<p><span class="span-red">Reprovado</span>.</p> 
+    resposta.innerHTML = `<p><span class="span-red">Reprovado</span> com Média <span class="span-red">${media}</span>. </p> 
     <p>Você precisa de <span class="span-red">${final}</span> pontos para ser aprovado na avaliação final.</p>`;
+    container.style.height = "180px";
   } else if (soma >= 14) {
     media = soma / 2;
     resposta.innerHTML = `<p>A sua média foi <span class="span-green">${media}</span>.</p>

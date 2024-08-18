@@ -151,18 +151,3 @@ input[type="number"] {
   color: red;
   font-weight: bold;
 }
-
-@media screen and (max-width: 450px) {
-  section {
-    max-width: 90vw;
-  }
-
-  .container {
-    max-width: 90vw;
-    height: 200px;
-  }
-
-  #resposta {
-    max-width: 80vw;
-  }
-}
